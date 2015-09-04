@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Add #ID in post title
-Version: 0.1
-Plugin URI: ${TM_PLUGIN_BASE}
+Plugin URI: https://github.com/systemo-biz/add-id-in-title-wp
 Description: Add pot_id in title with #. It is coll for Wunderlist
-Author: ${TM_NAME}
-Author URI: ${TM_HOMEPAGE}
+Author: Systemo
+Author URI: http://systemo.biz
+Version: 20150902
 */
 function dw_listing_title( $title ) {
     if ( is_singular() && $id = get_queried_object_id() ) {
